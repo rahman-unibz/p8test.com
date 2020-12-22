@@ -1,13 +1,13 @@
 div.menu {
   display: flex;
-
-  div.logo {
-	flex-basis: 20%;
-  }
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
 
   div.menu-item {
-	flex-basis: 80%;
 	align-items: center;
+	flex-basis: 50%;
+	display: none;
 
 	ul {
 	  list-style: none;
@@ -19,8 +19,24 @@ div.menu {
 	  li a {
 		text-decoration: none;
 		font-family: 'Open Sans', sans-serif;
+		font-size: 1.25rem;
+		line-height: 1.2;
 	  }
 	}
   }
+  div.search {
+	display: flex;
 
+	img {
+	  margin-left: 10px;
+	}
+  }
+}
+
+@media all and (min-width: 768px){
+ div.menu{
+   div.menu-item {
+	 display: block;
+   }
+ }
 }

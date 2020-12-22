@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="menu container">
     <div class="logo">
         <img src="common/images/logo.png" alt="tele"/>
     </div>
@@ -30,5 +30,14 @@
             <?php } ?>
         </ul>
     </div>
+    <div class="search">
+        <button>PRODUKTSUCHE</button>
+        <img src="common/images/search.svg" alt="search"/>
+    </div>
+
+    <a href="">
+        <img src="common/images/hamburger.svg" alt="hamburger"/>
+    </a>
+
 
 </div>

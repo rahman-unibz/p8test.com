@@ -1,18 +1,36 @@
 @import 'variables.scss';
 
 
-body {
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+ p, a, span {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.container {
   max-width: 1364px;
   margin: 0 auto;
 }
 
-*, p, a, span {
-  color: #000;
-  font-family: "Open Sans", sans-serif;
+button {
+  background: transparent;
+  border: solid 1px #81bd00;
+  padding: 9px 4px 6px 13px;
+  text-transform: uppercase;
+  color: #81bd00;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 @import 'menu.scss';
 @import 'header.scss';
 @import 'content.scss';
 @import 'footer.scss';
+
+
+
+
 
