@@ -4,39 +4,34 @@ div.menu {
   justify-content: space-between;
   align-items: center;
 
-  div.menu-item {
+  ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	flex-basis: 50%;
-	display: none;
+	height: 100%;
 
-	ul {
-	  list-style: none;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  height: 100%;
-
-	  li a {
+	li {
+	  a {
 		text-decoration: none;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 1.25rem;
 		line-height: 1.2;
 	  }
 	}
-  }
-  div.search {
-	display: flex;
+	li.item {
+	  display: none;
+	}
 
-	img {
-	  margin-left: 10px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  div.menu {
+	ul li.item {
+	  display: block;
 	}
   }
 }
 
-@media all and (min-width: 768px){
- div.menu{
-   div.menu-item {
-	 display: block;
-   }
- }
-}

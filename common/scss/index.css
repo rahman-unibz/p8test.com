@@ -1,3 +1,23 @@
+html {
+  /*  font-size: 12px;
+  @media all and (min-width: 1200px){
+    font-size: 20px;
+  }*/
+}
+html {
+  font-size: 10px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(10px + 10 * ((100vw - 320px) / 1600));
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 p, a, span {
   color: #000;
   font-family: "Open Sans", sans-serif;
@@ -24,35 +44,34 @@ div.menu {
   justify-content: space-between;
   align-items: center;
 }
-div.menu div.menu-item {
-  align-items: center;
-  flex-basis: 50%;
-  display: none;
-}
-div.menu div.menu-item ul {
+div.menu ul {
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-div.menu div.menu-item ul li a {
+div.menu ul li a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 1.2;
 }
-div.menu div.search {
-  display: flex;
-}
-div.menu div.search img {
-  margin-left: 10px;
+div.menu ul li.item {
+  display: none;
 }
 
 @media all and (min-width: 768px) {
-  div.menu div.menu-item {
+  div.menu ul li.item {
     display: block;
   }
+}
+div.header {
+  padding-top: 0.8rem;
+}
+div.header img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
