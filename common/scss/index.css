@@ -57,6 +57,8 @@ div.menu ul li a {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 div.menu ul li.item {
   display: none;
@@ -70,8 +72,48 @@ div.menu ul li.item {
 div.header {
   padding-top: 0.8rem;
 }
-div.header img {
+div.header div.swiper-slide {
+  position: relative;
+}
+div.header div.swiper-slide img {
   width: 100%;
+}
+div.header div.swiper-slide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent linear-gradient(90deg, #FFFFFF80 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+div.header div.swiper-slide div.slider-text {
+  position: absolute;
+  width: 50%;
+  max-width: 674px;
+  top: 50%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2.5rem 3rem;
+}
+div.header div.swiper-slide div.slider-text h2 {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  text-align: left;
+  font: normal normal normal 48px/58px Open Sans;
+  letter-spacing: 7.68px;
+  color: #404040;
+  text-transform: uppercase;
+  opacity: 1;
+}
+div.header div.swiper-slide div.slider-text p {
+  text-align: left;
+  font: 18px/30px Open Sans;
+  letter-spacing: 0px;
+  color: #404040;
+  text-transform: uppercase;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */

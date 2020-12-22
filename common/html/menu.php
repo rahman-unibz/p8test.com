@@ -25,7 +25,7 @@
         </li>
         <?php foreach ($menus as $menu) { ?>
             <li class="item">
-                <a href="<?php $menu['title'] ?>">
+                <a href="#">
                     <?php echo $menu['title'] ?></a>
             </li>
         <?php } ?>

@@ -5,33 +5,36 @@ div.menu {
   align-items: center;
 
   ul {
-	width: 100%;
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 
-	li {
-	  a {
-		text-decoration: none;
-		font-family: 'Open Sans', sans-serif;
-		font-size: 1.25rem;
-		line-height: 1.2;
-	  }
-	}
-	li.item {
-	  display: none;
-	}
+    li {
+      a {
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+
+    li.item {
+      display: none;
+    }
 
   }
 }
 
 @media all and (min-width: 768px) {
   div.menu {
-	ul li.item {
-	  display: block;
-	}
+    ul li.item {
+      display: block;
+    }
   }
 }
 
