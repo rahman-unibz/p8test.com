@@ -43,6 +43,7 @@ div.menu {
   padding-top: 10px;
   justify-content: space-between;
   align-items: center;
+  width: 95%;
 }
 div.menu ul {
   width: 100%;
@@ -86,6 +87,7 @@ div.header div.swiper-slide:after {
   left: 0;
   right: 0;
   background: transparent linear-gradient(90deg, #FFFFFF80 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 div.header div.swiper-slide div.slider-text {
   position: absolute;
@@ -93,6 +95,7 @@ div.header div.swiper-slide div.slider-text {
   max-width: 674px;
   top: 50%;
   left: 10%;
+  transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.5);
   padding: 2.5rem 3rem;
 }
@@ -101,19 +104,41 @@ div.header div.swiper-slide div.slider-text h2 {
   top: -35px;
   left: 0;
   text-align: left;
-  font: normal normal normal 48px/58px Open Sans;
+  font: normal normal normal 2.4rem/2.9rem Open Sans;
   letter-spacing: 7.68px;
-  color: #404040;
+  /* color: #404040;*/
+  color: #000;
   text-transform: uppercase;
   opacity: 1;
 }
 div.header div.swiper-slide div.slider-text p {
   text-align: left;
-  font: 18px/30px Open Sans;
+  font: 0.9rem/1.5rem Open Sans;
   letter-spacing: 0px;
   color: #404040;
   text-transform: uppercase;
   opacity: 1;
+}
+div.header .swiper-scrollbar-drag {
+  background: #81BD00;
+}
+div.header .swiper-button-prev, div.header .swiper-button-next {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: transparent;
+}
+div.header .swiper-button-prev:after, div.header .swiper-button-next:after {
+  content: "";
+}
+div.header .swiper-button-prev {
+  left: 7%;
+  background: url("../../common/images/left-arrow.svg") no-repeat;
+  background-size: cover;
+}
+div.header .swiper-button-next {
+  right: 37%;
+  background: url("../../common/images/right-arrow.svg") no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=index.css.map */
