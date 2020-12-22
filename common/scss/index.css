@@ -1,0 +1,39 @@
+body {
+  max-width: 1364px;
+  margin: 0 auto;
+}
+
+*, p, a, span {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.menu {
+  display: flex;
+}
+div.menu div.logo {
+  flex-basis: 20%;
+}
+div.menu div.menu-item {
+  flex-basis: 80%;
+  align-items: center;
+}
+div.menu div.menu-item ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+div.menu div.menu-item ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.content {
+  max-width: 965px;
+  margin: 0 auto;
+  border: solid 1px red;
+}
+
+/*# sourceMappingURL=index.css.map */

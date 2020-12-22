@@ -1,0 +1,18 @@
+@import 'variables.scss';
+
+
+body {
+  max-width: 1364px;
+  margin: 0 auto;
+}
+
+*, p, a, span {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+@import 'menu.scss';
+@import 'header.scss';
+@import 'content.scss';
+@import 'footer.scss';
+

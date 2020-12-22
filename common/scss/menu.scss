@@ -1,0 +1,26 @@
+div.menu {
+  display: flex;
+
+  div.logo {
+	flex-basis: 20%;
+  }
+
+  div.menu-item {
+	flex-basis: 80%;
+	align-items: center;
+
+	ul {
+	  list-style: none;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  height: 100%;
+
+	  li a {
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+	  }
+	}
+  }
+
+}
