@@ -150,8 +150,7 @@ div.header div.swiper-slide div.slider-text h2 {
   text-align: left;
   font: normal normal normal 2.4rem/2.9rem Open Sans;
   letter-spacing: 7.68px;
-  /* color: #404040;*/
-  color: #000;
+  color: #404040;
   text-transform: uppercase;
   opacity: 1;
 }
@@ -262,6 +261,30 @@ div.boxes div.box div.box-text p {
   letter-spacing: 0px;
   color: #606060;
   opacity: 1;
+}
+
+div.footer {
+  margin-top: 10rem;
+  background: #81BD00;
+  padding: 2rem 0;
+  text-align: center;
+}
+div.footer p {
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+div.footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 1rem;
+}
+div.footer ul li {
+  margin-right: 2rem;
+}
+div.footer ul li a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */

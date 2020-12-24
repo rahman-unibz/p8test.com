@@ -1,0 +1,27 @@
+div.footer {
+  margin-top: 10rem;
+  background: #81BD00;
+  padding: 2rem 0;
+  text-align: center;
+
+  p {
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 1rem;
+
+    li {
+      margin-right: 2rem;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+}
