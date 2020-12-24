@@ -1,6 +1,10 @@
 div.header {
   padding-top: 0.8rem;
 
+  div.swiper-container {
+    padding-bottom: 10px;
+  }
+
   div.swiper-slide {
     position: relative;
 
@@ -18,28 +22,31 @@ div.header {
       background: transparent linear-gradient(90deg, #FFFFFF80 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
       opacity: 1;
     }
+
     div.slider-text {
       position: absolute;
       width: 50%;
       max-width: 674px;
       top: 50%;
-      left:10%;
+      left: 10%;
       transform: translateY(-50%);
-      background: rgba(255,255,255,0.5);
+      background: rgba(255, 255, 255, 0.5);
       padding: 2.5rem 3rem;
+      z-index: 1;
 
       h2 {
         position: absolute;
         top: -35px;
-        left:0;
+        left: 0;
         text-align: left;
         font: normal normal normal 2.4rem/2.9rem Open Sans;
         letter-spacing: 7.68px;
-       /* color: #404040;*/
+        /* color: #404040;*/
         color: #000;
         text-transform: uppercase;
         opacity: 1;
       }
+
       p {
         text-align: left;
         font: 0.9rem/1.5rem Open Sans;
@@ -55,24 +62,66 @@ div.header {
     background: #81BD00;
   }
 
-  .swiper-button-prev, .swiper-button-next{
+  .swiper-container-horizontal > .swiper-scrollbar {
+    left: 0;
+    bottom: 13px;
+    width: 100%;
+    background: #c4c4c4;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
     width: 3.5rem;
     height: 3.5rem;
     color: transparent;
-    &:after{
+
+    &:after {
       content: '';
     }
   }
+
   .swiper-button-prev {
-    left: 7%;
+    left: 20px;
     background: url('../../common/images/left-arrow.svg') no-repeat;
     background-size: cover;
   }
 
   .swiper-button-next {
-    right: 37%;
+    right: 20px;
     background: url('../../common/images/right-arrow.svg') no-repeat;
     background-size: cover;
+    /* @media all and (min-width: 1400px){
+       left: 52%;
+     }*/
+  }
+
+  .swiper-pagination-bullet {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0;
+    background: #fff;
+    border: solid 3px #c4c4c4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 5px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .swiper-pagination-bullet {
+    opacity: 1;
+  }
+
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    transform: rotate(45deg);
+    border: solid 3px #81BD00;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
 }

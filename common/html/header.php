@@ -31,6 +31,9 @@
         <div class="swiper-button-prev"></div>
         <!-- Add Scrollbar -->
         <div class="swiper-scrollbar"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
     </div>
 
 

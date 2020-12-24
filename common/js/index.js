@@ -3,7 +3,6 @@ $(function () {
         autoplay: {
             delay: 1000000,
         },
-        cssMode: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -11,6 +10,10 @@ $(function () {
         scrollbar: {
             el: '.swiper-scrollbar',
             hide: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
         },
         mousewheel: true,
         keyboard: true,
