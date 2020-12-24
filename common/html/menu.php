@@ -18,7 +18,7 @@
 ];
 ?>
 
-<div class="menu container">
+<div class="menu">
     <ul>
         <li>
             <img src="common/images/logo.png" alt="tele"/>

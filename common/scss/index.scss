@@ -1,58 +1,12 @@
 @import 'variables.scss';
-
-
-html {
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  /*  font-size: 12px;
-	@media all and (min-width: 1200px){
-	  font-size: 20px;
-	}*/
-
-}
-
-p, a, span {
-  color: #000;
-  font-family: "Open Sans", sans-serif;
-}
-
-div.container {
-  max-width: 1364px;
-  margin: 0 auto;
-}
-
-button {
-  background: transparent;
-  border: solid 1px #81bd00;
-  padding: 9px 4px 6px 13px;
-  text-transform: uppercase;
-  color: #81bd00;
-  font-size: 1.2rem;
-  line-height: 1.2;
-}
-
+@import 'common.scss';
 @import 'menu.scss';
 @import 'header.scss';
 @import 'content.scss';
+@import 'boxes.scss';
 @import 'footer.scss';
 
 
-@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
 
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-	& {
-	  font-size: $min-font-size;
-	  @media screen and (min-width: $min-vw) {
-		font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-	  }
-	  @media screen and (min-width: $max-vw) {
-		font-size: $max-font-size;
-	  }
-	}
-  }
-}
 
 

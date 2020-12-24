@@ -22,6 +22,8 @@
     <?php include 'common/html/header.php' ?>
     <!--include content block-->
     <?php include 'common/html/content.php' ?>
+    <!--include box block-->
+    <?php include 'common/html/boxes.php' ?>
     <!--include footer block-->
     <?php include 'common/html/footer.php' ?>
 
