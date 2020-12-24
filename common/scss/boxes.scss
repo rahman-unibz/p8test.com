@@ -17,10 +17,9 @@ div.boxes {
 
   div.box {
     max-width: 300px;
-    width: 33.33%;
+    width: calc(33.33% - 1.875rem);
     background: #F8F8F8;
-    margin-bottom: 1.875rem;
-    margin-right: 1.875rem;
+    margin: 0.8rem;
 
     img {
       display: block;
@@ -30,6 +29,7 @@ div.boxes {
 
     div.box-text {
       padding: 1rem;
+      background: #F0F0F0;
 
       p {
         text-align: left;
