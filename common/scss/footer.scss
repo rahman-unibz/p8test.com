@@ -1,8 +1,22 @@
 div.footer {
+  position: relative;
   margin-top: 10rem;
   background: #81BD00;
-  padding: 2rem 0;
+  padding: 4rem 0;
   text-align: center;
+
+  &:before {
+    content: '';
+    width: 4rem;
+    height: 4.5rem;
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../../common/images/footer.png') no-repeat;
+    background-size: cover;
+  }
 
   p {
     color: #fff;

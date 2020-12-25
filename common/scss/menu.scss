@@ -23,6 +23,7 @@ div.menu {
         line-height: 1.2;
         font-weight: 300;
         text-transform: uppercase;
+        cursor: pointer;
       }
     }
 
@@ -30,6 +31,46 @@ div.menu {
       display: none;
     }
 
+  }
+}
+
+div.mobile-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -150%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s ease;
+
+
+  &.show-menu {
+    display: flex;
+    left: 0;
+    opacity: 1;
+    z-index: 101;
+    background: #fff;
+    transition: all 1s ease;
+
+  }
+
+  a.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 1rem;
+    }
   }
 }
 

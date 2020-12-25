@@ -100,9 +100,44 @@ div.menu ul li a {
   line-height: 1.2;
   font-weight: 300;
   text-transform: uppercase;
+  cursor: pointer;
 }
 div.menu ul li.item {
   display: none;
+}
+
+div.mobile-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -150%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s ease;
+}
+div.mobile-menu.show-menu {
+  display: flex;
+  left: 0;
+  opacity: 1;
+  z-index: 101;
+  background: #fff;
+  transition: all 1s ease;
+}
+div.mobile-menu a.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+div.mobile-menu ul {
+  list-style: none;
+}
+div.mobile-menu ul li {
+  padding: 1rem;
 }
 
 @media all and (min-width: 768px) {
@@ -142,6 +177,12 @@ div.header div.swiper-slide div.slider-text {
   background: rgba(255, 255, 255, 0.5);
   padding: 2.5rem 3rem;
   z-index: 1;
+  display: none;
+}
+@media all and (min-width: 768px) {
+  div.header div.swiper-slide div.slider-text {
+    display: block;
+  }
 }
 div.header div.swiper-slide div.slider-text h2 {
   position: absolute;
@@ -237,14 +278,15 @@ div.boxes div.introduction p {
 }
 div.boxes div.box-container {
   display: flex;
-  flex: 33.33% 1 1;
   flex-wrap: wrap;
+  justify-content: center;
 }
 div.boxes div.box {
   max-width: 300px;
-  width: calc(33.33% - 1.875rem);
+  /*width: calc(33.33% - 1.875rem);*/
+  width: calc(100% - 1.875rem);
   background: #F8F8F8;
-  margin: 0.8rem;
+  margin: 0.93rem;
 }
 div.boxes div.box img {
   display: block;
@@ -262,12 +304,30 @@ div.boxes div.box div.box-text p {
   color: #606060;
   opacity: 1;
 }
+@media all and (min-width: 768px) {
+  div.boxes div.box {
+    width: calc(33.33% - 1.875rem);
+  }
+}
 
 div.footer {
+  position: relative;
   margin-top: 10rem;
   background: #81BD00;
-  padding: 2rem 0;
+  padding: 4rem 0;
   text-align: center;
+}
+div.footer:before {
+  content: "";
+  width: 4rem;
+  height: 4.5rem;
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../../common/images/footer.png") no-repeat;
+  background-size: cover;
 }
 div.footer p {
   color: #fff;
