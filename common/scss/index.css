@@ -81,12 +81,23 @@ div.menu {
   padding-top: 10px;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: 100%;
   max-width: 1364px;
   margin: 0 auto;
+  /*  &.sticky{
+      position: sticky;
+      top:0;
+      left:0;
+      background: #fff;
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+      z-index: 102;
+      padding: 10px;
+    }*/
 }
 div.menu ul {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -225,13 +236,31 @@ div.header .swiper-button-prev {
   background: url("../../common/images/left-arrow.svg") no-repeat;
   background-size: cover;
 }
+@media all and (min-width: 768px) {
+  div.header .swiper-button-prev {
+    left: 7%;
+  }
+}
 div.header .swiper-button-next {
   right: 20px;
   background: url("../../common/images/right-arrow.svg") no-repeat;
   background-size: cover;
-  /* @media all and (min-width: 1400px){
-     left: 52%;
-   }*/
+}
+@media all and (min-width: 768px) {
+  div.header .swiper-button-next {
+    right: auto;
+    left: 60%;
+  }
+}
+@media all and (min-width: 1450px) {
+  div.header .swiper-button-next {
+    left: 54%;
+  }
+}
+@media all and (min-width: 1650px) {
+  div.header .swiper-button-next {
+    left: 50%;
+  }
 }
 div.header .swiper-pagination-bullet {
   width: 1.5rem;

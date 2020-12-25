@@ -87,15 +87,25 @@ div.header {
     left: 20px;
     background: url('../../common/images/left-arrow.svg') no-repeat;
     background-size: cover;
+    @media all and (min-width: 768px){
+      left: 7%;
+    }
   }
 
   .swiper-button-next {
     right: 20px;
     background: url('../../common/images/right-arrow.svg') no-repeat;
     background-size: cover;
-    /* @media all and (min-width: 1400px){
-       left: 52%;
-     }*/
+     @media all and (min-width: 768px){
+       right: auto;
+       left: 60%;
+     }
+    @media all and (min-width: 1450px){
+      left: 54%;
+    }
+    @media all and (min-width: 1650px){
+      left: 50%;
+    }
   }
 
   .swiper-pagination-bullet {

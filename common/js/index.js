@@ -15,14 +15,27 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-        mousewheel: true,
+        loop: true,
         keyboard: true,
     });
 
+/*    const topBarHeight = $('.menu').outerHeight();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > topBarHeight) {
+            $('.menu').addClass('sticky');
+        } else {
+            $('.menu').removeClass('sticky');
+        }
+    });*/
+
+
     $('.hamburger', 'div.menu').click(() => {
-     $('body').css('overflow', 'hidden');
-     $('div.mobile-menu').addClass('show-menu')
-     return false;
+        $('body').css('overflow', 'hidden');
+        $('div.mobile-menu').addClass('show-menu')
+        if($('div.menu').hasClass('sticky')){
+            $('div.menu').removeClass('sticky')
+        }
+        return false;
     });
 
     $('.close', 'div.mobile-menu').click(() => {

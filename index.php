@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="common/css/reset.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="common/js/mmenu/mmenu.css"/>
     <link rel="stylesheet" href="common/css/index.css"/>
     <script src="common/js/jquery/3.5.1/jquery.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="common/js/mmenu/mmenu.js"></script>
 </head>
 <body>
 <!-- include menu block-->
