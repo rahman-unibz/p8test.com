@@ -15,7 +15,6 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-        loop: true,
         keyboard: true,
     });
 
