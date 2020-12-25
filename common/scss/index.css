@@ -112,6 +112,7 @@ div.menu ul li a {
   font-weight: 300;
   text-transform: uppercase;
   cursor: pointer;
+  color: #000;
 }
 div.menu ul li.item {
   display: none;
