@@ -33,16 +33,17 @@ div.menu {
       display: none;
     }
   }
-/*  &.sticky{
-    position: sticky;
-    top:0;
-    left:0;
-    background: #fff;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-    z-index: 102;
-    padding: 10px;
-  }*/
+
+  /*  &.sticky{
+      position: sticky;
+      top:0;
+      left:0;
+      background: #fff;
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+      z-index: 102;
+      padding: 10px;
+    }*/
 }
 
 div.mobile-menu {
@@ -81,6 +82,17 @@ div.mobile-menu {
 
     li {
       padding: 1rem;
+
+      a {
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        font-weight: 300;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #000;
+      }
     }
   }
 }
