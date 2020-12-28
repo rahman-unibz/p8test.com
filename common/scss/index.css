@@ -223,7 +223,7 @@ div.header div.swiper-slide div.slider-text {
 div.header div.swiper-slide div.slider-text h1 {
   position: absolute;
   top: -26px;
-  left: 0;
+  left: 20px;
   text-align: left;
 }
 div.header div.swiper-slide div.slider-text p {
