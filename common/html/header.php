@@ -26,8 +26,8 @@ $headers = [
         <div class="swiper-wrapper">
             <?php foreach ($headers as $key => $header) { ?>
                 <div class="swiper-slide">
-                    <img src="<?php echo $header['image'] ?>" alt="header_<?php echo $key ?>" class="swiper-lazy"/>
-                    <div class="swiper-lazy-preloader"></div>
+                    <img src="<?php echo $header['image'] ?>" alt="header_<?php echo $key ?>"/>
+
                     <div class="slider-text">
                         <h1><?php echo $header['title'] ?></h1>
                         <p><?php echo $header['text'] ?> </p>

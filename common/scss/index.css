@@ -200,19 +200,24 @@ div.header div.swiper-slide:after {
 }
 div.header div.swiper-slide div.slider-text {
   position: absolute;
-  width: 50%;
+  width: 80%;
   max-width: 674px;
   top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.5);
   padding: 2.5rem 3rem;
   z-index: 1;
-  display: none;
 }
 @media all and (min-width: 768px) {
   div.header div.swiper-slide div.slider-text {
-    display: block;
+    left: 10%;
+    transform: translate(0, -50%);
+  }
+}
+@media all and (max-width: 400px) {
+  div.header div.swiper-slide div.slider-text {
+    display: none;
   }
 }
 div.header div.swiper-slide div.slider-text h1 {

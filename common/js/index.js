@@ -16,8 +16,6 @@ $(document).ready(function () {
             clickable: true,
         },
         keyboard: true,
-        preloadImages: false,
-        lazy: true
     });
 
     $('.hamburger', 'div.menu').click(() => {
