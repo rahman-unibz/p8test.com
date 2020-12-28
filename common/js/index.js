@@ -16,17 +16,9 @@ $(document).ready(function () {
             clickable: true,
         },
         keyboard: true,
+        preloadImages: false,
+        lazy: true
     });
-
-/*    const topBarHeight = $('.menu').outerHeight();
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > topBarHeight) {
-            $('.menu').addClass('sticky');
-        } else {
-            $('.menu').removeClass('sticky');
-        }
-    });*/
-
 
     $('.hamburger', 'div.menu').click(() => {
         $('body').css('overflow', 'hidden');

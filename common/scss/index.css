@@ -39,15 +39,24 @@ h1, h2, h3 {
   opacity: 1;
 }
 
+h1 {
+  color: #404040;
+  letter-spacing: 7.68px;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
 h2 {
   color: #808080;
   letter-spacing: 3.2px;
-  font: normal normal normal 2rem/2.625rem Open Sans;
+  font: normal normal normal 2rem/2.625rem "Open Sans", sans-serif;
   margin-bottom: 1.75rem;
 }
 
 h3 {
-  font: normal normal normal 1.25rem/1.5rem Open Sans;
+  font: normal normal normal 1.25rem/1.5rem "Open Sans", sans-serif;
   letter-spacing: 3.2px;
   color: #404040;
   margin-bottom: 0.5rem;
@@ -60,7 +69,7 @@ div.editor {
 }
 div.editor p {
   text-align: center;
-  font: normal normal 300 1rem/1.66rem Open Sans;
+  font: normal normal 300 1rem/1.66rem "Open Sans", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   padding-bottom: 3rem;
@@ -206,16 +215,11 @@ div.header div.swiper-slide div.slider-text {
     display: block;
   }
 }
-div.header div.swiper-slide div.slider-text h2 {
+div.header div.swiper-slide div.slider-text h1 {
   position: absolute;
-  top: -35px;
+  top: -26px;
   left: 0;
   text-align: left;
-  font: normal normal normal 2.4rem/2.9rem Open Sans;
-  letter-spacing: 7.68px;
-  color: #404040;
-  text-transform: uppercase;
-  opacity: 1;
 }
 div.header div.swiper-slide div.slider-text p {
   text-align: left;
@@ -224,6 +228,14 @@ div.header div.swiper-slide div.slider-text p {
   color: #404040;
   text-transform: uppercase;
   opacity: 1;
+}
+div.header div.swiper-slide div.slider-text a {
+  position: absolute;
+  right: 50px;
+  bottom: -15px;
+  background: #81bd00;
+  color: #fff;
+  padding-right: 10px;
 }
 div.header .swiper-scrollbar-drag {
   background: #81BD00;
