@@ -243,35 +243,27 @@ div.header .swiper-button-prev:after, div.header .swiper-button-next:after {
   content: "";
 }
 div.header .swiper-button-prev {
-  left: 20px;
+  left: -22px;
   background: url("../../common/images/left-arrow.svg") no-repeat;
   background-size: cover;
-}
-@media all and (min-width: 768px) {
-  div.header .swiper-button-prev {
+  /*@media all and (min-width: 768px){
     left: 7%;
-  }
+  }*/
 }
 div.header .swiper-button-next {
-  right: 20px;
+  right: -13px;
   background: url("../../common/images/right-arrow.svg") no-repeat;
   background-size: cover;
-}
-@media all and (min-width: 768px) {
-  div.header .swiper-button-next {
-    right: auto;
-    left: 60%;
-  }
-}
-@media all and (min-width: 1450px) {
-  div.header .swiper-button-next {
+  /* @media all and (min-width: 768px){
+     right: auto;
+     left: 60%;
+   }
+  @media all and (min-width: 1450px){
     left: 54%;
   }
-}
-@media all and (min-width: 1650px) {
-  div.header .swiper-button-next {
+  @media all and (min-width: 1650px){
     left: 50%;
-  }
+  }*/
 }
 div.header .swiper-pagination-bullet {
   width: 1.5rem;

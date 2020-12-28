@@ -7,6 +7,8 @@
                     <h2>EMS-FERTIGUNG</h2>
                     <p>Entlang Der gesamten wertschöpfungskette von elektronikentwicklung
                         über-producktion bis logistik </p>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -15,6 +17,8 @@
                     <h2>EMS-FERTIGUNG</h2>
                     <p>Entlang Der gesamten wertschöpfungskette von elektronikentwicklung
                         über-producktion bis logistik </p>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -23,12 +27,14 @@
                     <h2>EMS-FERTIGUNG</h2>
                     <p>Entlang Der gesamten wertschöpfungskette von elektronikentwicklung
                         über-producktion bis logistik </p>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
         <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+
+
         <!-- Add Scrollbar -->
         <div class="swiper-scrollbar"></div>
         <!-- Add Pagination -->

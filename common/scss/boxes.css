@@ -1,3 +1,43 @@
-
+div.boxes {
+  margin-top: 6rem;
+}
+div.boxes div.introduction p {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+div.boxes div.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div.boxes div.box {
+  max-width: 300px;
+  /*width: calc(33.33% - 1.875rem);*/
+  width: calc(100% - 1.875rem);
+  background: #F8F8F8;
+  margin: 0.93rem;
+}
+div.boxes div.box img {
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+div.boxes div.box div.box-text {
+  padding: 1rem;
+  background: #F0F0F0;
+}
+div.boxes div.box div.box-text p {
+  text-align: left;
+  font: normal normal 300 0.875rem/1.0625rem Open Sans;
+  letter-spacing: 0px;
+  color: #606060;
+  opacity: 1;
+}
+@media all and (min-width: 768px) {
+  div.boxes div.box {
+    width: calc(33.33% - 1.875rem);
+  }
+}
 
 /*# sourceMappingURL=boxes.css.map */

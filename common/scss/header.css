@@ -1,3 +1,134 @@
-
+div.header {
+  padding-top: 0.8rem;
+}
+div.header div.swiper-container {
+  padding-bottom: 10px;
+}
+div.header div.swiper-slide {
+  position: relative;
+}
+div.header div.swiper-slide img {
+  width: 100%;
+}
+div.header div.swiper-slide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent linear-gradient(90deg, #FFFFFF80 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+div.header div.swiper-slide div.slider-text {
+  position: absolute;
+  width: 50%;
+  max-width: 674px;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2.5rem 3rem;
+  z-index: 1;
+  display: none;
+}
+@media all and (min-width: 768px) {
+  div.header div.swiper-slide div.slider-text {
+    display: block;
+  }
+}
+div.header div.swiper-slide div.slider-text h2 {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  text-align: left;
+  font: normal normal normal 2.4rem/2.9rem Open Sans;
+  letter-spacing: 7.68px;
+  color: #404040;
+  text-transform: uppercase;
+  opacity: 1;
+}
+div.header div.swiper-slide div.slider-text p {
+  text-align: left;
+  font: 0.9rem/1.5rem Open Sans;
+  letter-spacing: 0px;
+  color: #404040;
+  text-transform: uppercase;
+  opacity: 1;
+}
+div.header .swiper-scrollbar-drag {
+  background: #81BD00;
+}
+div.header .swiper-container-horizontal > .swiper-scrollbar {
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  background: #c4c4c4;
+}
+div.header .swiper-button-prev, div.header .swiper-button-next {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: transparent;
+}
+div.header .swiper-button-prev:after, div.header .swiper-button-next:after {
+  content: "";
+}
+div.header .swiper-button-prev {
+  left: 20px;
+  background: url("../../common/images/left-arrow.svg") no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 768px) {
+  div.header .swiper-button-prev {
+    left: 7%;
+  }
+}
+div.header .swiper-button-next {
+  right: 20px;
+  background: url("../../common/images/right-arrow.svg") no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 768px) {
+  div.header .swiper-button-next {
+    right: auto;
+    left: 60%;
+  }
+}
+@media all and (min-width: 1450px) {
+  div.header .swiper-button-next {
+    left: 54%;
+  }
+}
+@media all and (min-width: 1650px) {
+  div.header .swiper-button-next {
+    left: 50%;
+  }
+}
+div.header .swiper-pagination-bullet {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0;
+  background: #fff;
+  border: solid 3px #c4c4c4;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+div.header .swiper-container-horizontal > .swiper-pagination-bullets, div.header .swiper-pagination-custom, div.header .swiper-pagination-fraction {
+  bottom: 5px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+}
+div.header .swiper-pagination-bullet {
+  opacity: 1;
+}
+div.header span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  transform: rotate(45deg);
+  border: solid 3px #81BD00;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
 /*# sourceMappingURL=header.css.map */

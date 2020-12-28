@@ -84,19 +84,19 @@ div.header {
   }
 
   .swiper-button-prev {
-    left: 20px;
+    left: -22px;
     background: url('../../common/images/left-arrow.svg') no-repeat;
     background-size: cover;
-    @media all and (min-width: 768px){
+    /*@media all and (min-width: 768px){
       left: 7%;
-    }
+    }*/
   }
 
   .swiper-button-next {
-    right: 20px;
+    right: -13px;
     background: url('../../common/images/right-arrow.svg') no-repeat;
     background-size: cover;
-     @media all and (min-width: 768px){
+    /* @media all and (min-width: 768px){
        right: auto;
        left: 60%;
      }
@@ -105,7 +105,7 @@ div.header {
     }
     @media all and (min-width: 1650px){
       left: 50%;
-    }
+    }*/
   }
 
   .swiper-pagination-bullet {
